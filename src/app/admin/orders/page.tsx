@@ -28,7 +28,7 @@ export default function AdminOrdersPage() {
   );
 }
 
-export async function OrdersTable() {
+async function OrdersTable() {
   const orders = await db.order.findMany({
     select: {
       id: true,

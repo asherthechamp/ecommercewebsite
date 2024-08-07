@@ -29,7 +29,7 @@ export default function AdminUsersPage() {
   );
 }
 
-export async function UsersTable() {
+async function UsersTable() {
   const users = await db.user.findMany({
     select: {
       id: true,
